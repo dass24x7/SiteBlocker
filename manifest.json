@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "My First Extension",
+    "version": "1.0.0",
+    "action": {
+        "default_icon":"icons.png",
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["script.js"]
+        }
+],
+    "permissions": ["activeTab"]
+}
